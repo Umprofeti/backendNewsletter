@@ -6,7 +6,7 @@ const form = new mongoose.Schema(
         apellido:{type:String},
         pais:{type:String},
         telefono:{type:String},
-        correo:{type:String}
+        correo:{type:String, unique: true}
     }
 );
 
